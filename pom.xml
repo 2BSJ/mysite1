@@ -1,57 +1,57 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.cafe24</groupId>
-	<artifactId>mysite1</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+<!-- <project xmlns="http://maven.apache.org/POM/4.0.0" -->
+<!-- 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" -->
+<!-- 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"> -->
+<!-- 	<modelVersion>4.0.0</modelVersion> -->
+<!-- 	<groupId>com.cafe24</groupId> -->
+<!-- 	<artifactId>mysite1</artifactId> -->
+<!-- 	<version>0.0.1-SNAPSHOT</version> -->
+<!-- 	<packaging>war</packaging> -->
 
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-	</properties>
+<!-- 	<properties> -->
+<!-- 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> -->
+<!-- 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding> -->
+<!-- 	</properties> -->
 
-	<dependencies>
-		<!-- mariadb java client -->
-		<dependency>
-			<groupId>org.mariadb.jdbc</groupId>
-			<artifactId>mariadb-java-client</artifactId>
-			<version>2.4.0</version>
-		</dependency>
+<!-- 	<dependencies> -->
+		<!-- mariadb java client --> 
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.mariadb.jdbc</groupId> -->
+<!-- 			<artifactId>mariadb-java-client</artifactId> -->
+<!-- 			<version>2.4.0</version> -->
+<!-- 		</dependency> -->
 
 
 		<!-- jstl -->
-		<dependency>
-			<groupId>jstl</groupId>
-			<artifactId>jstl</artifactId>
-			<version>1.2</version>
-		</dependency>
+<!-- 		<dependency> -->
+<!-- 			<groupId>jstl</groupId> -->
+<!-- 			<artifactId>jstl</artifactId> -->
+<!-- 			<version>1.2</version> -->
+<!-- 		</dependency> -->
 
 
 		<!-- Servlet -->
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>javax.servlet-api</artifactId>
-			<version>3.0.1</version>
+<!-- 		<dependency> -->
+<!-- 			<groupId>javax.servlet</groupId> -->
+<!-- 			<artifactId>javax.servlet-api</artifactId> -->
+<!-- 			<version>3.0.1</version> -->
 			<!-- <version>2.5</version> -->
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>javax.servlet.jsp</groupId>
-			<artifactId>jsp-api</artifactId>
-			<version>2.0</version>
-			<scope>provided</scope>
-		</dependency>
+<!-- 			<scope>provided</scope> -->
+<!-- 		</dependency> -->
+<!-- 		<dependency> -->
+<!-- 			<groupId>javax.servlet.jsp</groupId> -->
+<!-- 			<artifactId>jsp-api</artifactId> -->
+<!-- 			<version>2.0</version> -->
+<!-- 			<scope>provided</scope> -->
+<!-- 		</dependency> -->
 
 
-	</dependencies>
+<!-- 	</dependencies> -->
 
-	<build>
-		<sourceDirectory>src/main/java</sourceDirectory>
+<!-- 	<build> -->
+<!-- 		<sourceDirectory>src/main/java</sourceDirectory> -->
 
 
-		<plugins>
+<!-- 		<plugins> -->
 			<!-- <plugin> -->
 			<!-- <groupId>org.apache.maven.plugins</groupId> -->
 			<!-- <artifactId>maven-resources-plugin</artifactId> -->
@@ -59,68 +59,181 @@
 			<!-- <encoding>UTF-8</encoding> -->
 			<!-- </configuration> -->
 			<!-- </plugin> -->
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.8.0</version>
-				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-war-plugin</artifactId>
-				<version>3.2.1</version>
-				<configuration>
-					<warSourceDirectory>src/main/webapp</warSourceDirectory>
-				</configuration>
-			</plugin>
+<!-- 			<plugin> -->
+<!-- 				<groupId>org.apache.maven.plugins</groupId> -->
+<!-- 				<artifactId>maven-compiler-plugin</artifactId> -->
+<!-- 				<version>3.8.0</version> -->
+<!-- 				<configuration> -->
+<!-- 					<source>1.8</source> -->
+<!-- 					<target>1.8</target> -->
+<!-- 				</configuration> -->
+<!-- 			</plugin> -->
+<!-- 			<plugin> -->
+<!-- 				<groupId>org.apache.maven.plugins</groupId> -->
+<!-- 				<artifactId>maven-war-plugin</artifactId> -->
+<!-- 				<version>3.2.1</version> -->
+<!-- 				<configuration> -->
+<!-- 					<warSourceDirectory>src/main/webapp</warSourceDirectory> -->
+<!-- 				</configuration> -->
+<!-- 			</plugin> -->
 			
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>tomcat-maven-plugin</artifactId>
-				<configuration>
-					<url>http://127.0.0.1/manager/text</url>
-					<path>/mysite1</path>
-					<username>admin</username>
-					<password>admin</password>
-				</configuration>
-			</plugin>
+<!-- 			<plugin> -->
+<!-- 				<groupId>org.codehaus.mojo</groupId> -->
+<!-- 				<artifactId>tomcat-maven-plugin</artifactId> -->
+<!-- 				<configuration> -->
+<!-- 					<url>http://127.0.0.1/manager/text</url> -->
+<!-- 					<path>/mysite1</path> -->
+<!-- 					<username>admin</username> -->
+<!-- 					<password>admin</password> -->
+<!-- 				</configuration> -->
+<!-- 			</plugin> -->
 			
-		</plugins>
-	</build>
+<!-- 		</plugins> -->
+<!-- 	</build> -->
 	
-	<profiles>
-		<profile>
-			<id>production</id>
-			<build>
-				<resources>
-					<resource>
-						<directory>${project.basedir}/src/main/resources</directory>
-						<excludes>
-							<exclude>**/*.java</exclude>
-						</excludes>
-					</resource>
+<!-- 	<profiles> -->
+<!-- 		<profile> -->
+<!-- 			<id>production</id> -->
+<!-- 			<build> -->
+<!-- 				<resources> -->
+<!-- 					<resource> -->
+<!-- 						<directory>${project.basedir}/src/main/resources</directory> -->
+<!-- 						<excludes> -->
+<!-- 							<exclude>**/*.java</exclude> -->
+<!-- 						</excludes> -->
+<!-- 					</resource> -->
 
-					<resource>
-						<directory>${project.basedir}/src/main/production/resources</directory>
-						<excludes>
-							<exclude>**/*.java</exclude>
-						</excludes>
-					</resource>
-				</resources>
-				<plugins>
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-resources-plugin</artifactId>
-						<configuration>
-							<encoding>UTF-8</encoding>
-						</configuration>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-	</profiles>
+<!-- 					<resource> -->
+<!-- 						<directory>${project.basedir}/src/main/production/resources</directory> -->
+<!-- 						<excludes> -->
+<!-- 							<exclude>**/*.java</exclude> -->
+<!-- 						</excludes> -->
+<!-- 					</resource> -->
+<!-- 				</resources> -->
+<!-- 				<plugins> -->
+<!-- 					<plugin> -->
+<!-- 						<groupId>org.apache.maven.plugins</groupId> -->
+<!-- 						<artifactId>maven-resources-plugin</artifactId> -->
+<!-- 						<configuration> -->
+<!-- 							<encoding>UTF-8</encoding> -->
+<!-- 						</configuration> -->
+<!-- 					</plugin> -->
+<!-- 				</plugins> -->
+<!-- 			</build> -->
+<!-- 		</profile> -->
+<!-- 	</profiles> -->
 
+<!-- </project> -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+   <modelVersion>4.0.0</modelVersion>
+   <groupId>com.cafe24</groupId>
+   <artifactId>mysite1</artifactId>
+   <version>0.0.1-SNAPSHOT</version>
+   <packaging>war</packaging>
+   <properties>
+      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+      <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+   </properties>
+
+   <!-- 사용해야 할 라이브러리 -->
+   <dependencies>
+      <!-- mariadb java client -->
+      <dependency>
+         <groupId>org.mariadb.jdbc</groupId>
+         <artifactId>mariadb-java-client</artifactId>
+         <version>2.4.0</version>
+      </dependency>
+
+      <!-- jstl -->
+      <dependency>
+         <groupId>jstl</groupId>
+         <artifactId>jstl</artifactId>
+         <version>1.2</version>
+      </dependency>
+   </dependencies>
+
+   <profiles>
+      <profile>
+         <id>production</id>
+         <build>
+            <resources>
+               <resource>
+                  <directory>${project.basedir}/src/main/resources</directory>
+                  <excludes>
+                     <exclude>**/*.java</exclude>
+                  </excludes>
+               </resource>
+               <!-- Jenkins 빌드용 -->
+               <resource>
+                  <directory>${project.basedir}/src/main/production/resources</directory>
+                  <excludes>
+                     <exclude>**/*.java</exclude>
+                  </excludes>
+               </resource>
+            </resources>
+            <plugins>
+               <plugin>
+                  <groupId>org.apache.maven.plugins</groupId>
+                  <artifactId>maven-resources-plugin</artifactId>
+                  <configuration>
+                     <encoding>UTF-8</encoding>
+                  </configuration>
+               </plugin>
+            </plugins>
+         </build>
+         <dependencies>
+            <!-- Servlet -->
+            <dependency>
+               <groupId>javax.servlet</groupId>
+               <artifactId>javax.servlet-api</artifactId>
+               <version>3.0.1</version>
+               <scope>provided</scope>
+            </dependency>
+            <dependency>
+               <groupId>javax.servlet.jsp</groupId>
+               <artifactId>jsp-api</artifactId>
+               <version>2.0</version>
+               <scope>provided</scope>
+            </dependency>
+         </dependencies>
+      </profile>
+
+   </profiles>
+
+   <build>
+      <sourceDirectory>src/main/java</sourceDirectory>
+      <plugins>
+         <!-- Compiler 지정 -->
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <configuration>
+               <source>1.8</source>
+               <target>1.8</target>
+            </configuration>
+         </plugin>
+         <!-- .war로 만드는 플러그인 필요 -->
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-war-plugin</artifactId>
+            <configuration>
+               <warSourceDirectory>src/main/webapp</warSourceDirectory>
+            </configuration>
+         </plugin>
+
+         <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>tomcat-maven-plugin</artifactId>
+            <configuration>
+               <url>http://127.0.0.1:8080/manager/text</url>
+               <path>/mysite1</path>
+               <username>admin</username>
+               <password>admin</password>
+            </configuration>
+         </plugin>
+      </plugins>
+   </build>
 </project>
